@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Trinity Klein
+% Based off of: github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Trinity Klein} \\ \vspace{1pt}
+    \small Houston, TX $|$ \small (832)-497-8748 $|$ \href{mailto:trinitylklein@outlook.com}{\underline{trinitylklein@outlook.com}} \\ 
+    \href{https://linkedin.com/in/trinity-klein}{\underline{linkedin.com/in/trinity-klein}} $|$
+    \href{https://github.com/tlklein/}{\underline{github.com/tlklein/}} $|$
+    \href{https://trinityklein.dev}{\underline{trinityklein.dev}}
+\end{center}
+
+ %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, S3, EC2, DynamoDB, API Gateway, IAM, CloudFront, CloudWatch), Terraform, Infrastructure as Code (IaC), AWS CLI} \\
+     \textbf{DevOps \& Automation}{: GitHub Actions (CI/CD), Git, Docker, Kubernetes (AKS/EKS basics), OIDC, Monitoring/Logging, Automated Testing, Security Best Practices, Least-Privilege IAM} \\
+     \textbf{Programming \& Databases}{: Python, JavaScript/TypeScript, Node.js, Bash, SQL, REST APIs, Express.js, Vue.js, React, MongoDB, MySQL, DynamoDB, Serverless Architecture} \\
+     \textbf{Certifications}{: \href{https://www.credly.com/badges/9ab1424b-f346-4461-a1b7-829dc8591cd9}{\underline{AWS Certified Cloud Practitioner}} | Pursuing: AWS Solutions Architect Associate}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Automation Engineer (Digital Transformation)}{March 2020 -- December 2024}
+      {Southeast Hypnosis}{Houston, TX}
+        \resumeItemListStart
+          \resumeItem{Architected and deployed automated appointment scheduling and reminder workflows using a white-labeled automation/CRM platform with webhook integrations, reducing manual scheduling effort by ~50\% and lowering client no-shows by ~20\%.}
+          \resumeItem{Migrated corporate website from SiteGround to optimized WordPress infrastructure with caching, CDN integration, and database tuning, improving page load times by ~40\% and maintaining high availability.}
+          \resumeItem{Consolidated and normalized 300+ client records into a centralized, secure database; implemented access controls, data validation, and backup procedures to enhance data integrity and operational reporting.}
+          \resumeItem{Integrated AI-driven chatbot and automated lead-nurture workflows to qualify inbound traffic and trigger follow-ups, increasing qualified leads by ~25\% and improving client retention.}
+          %\resumeItem{Built internal analytics dashboards and KPI tracking tools to measure operational and marketing performance; leveraged insights to optimize targeting and streamline workflows.}
+          \resumeItem{Authored technical documentation, runbooks, and standard operating procedures; collaborated with executive stakeholders to translate business requirements into maintainable, scalable solutions.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\href{https://github.com/tlklein/portfolio-website}{\underline{Cloud Resume Project}} $|$ \href{https://trinityklein.dev/}{\underline{Live Demo}} $|$ \emph{AWS, Terraform, CI/CD, Serverless, TypeScript}}{September 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed multi-account AWS infrastructure (2 OUs: production/test) with MFA-enforced root account, environment isolation, and cost governance alerts, demonstrating cloud-native best practices.}
+        \resumeItem{Implemented end-to-end CI/CD pipelines using GitHub Actions with OIDC authentication, automated testing (Playwright and Grype), Terraform IaC deployments, and CloudFront invalidation for zero-downtime releases.}
+        \resumeItem{Built serverless backend with AWS Lambda, API Gateway, and DynamoDB to track visitor analytics with less than 100ms latency and high reliability, ensuring scalability for production workloads.}
+        \resumeItem{Applied security and compliance best practices including IAM least-privilege policies, S3 bucket hardening (versioning, AES-256 encryption, OAC-only access), and lifecycle rules for cost optimization.}
+      \resumeItemListEnd
+      
+  \resumeProjectHeading
+      {\href{https://github.com/tlklein/mongodb-data-platform-project}{\underline{Enterprise Data Platform}} $|$ \emph{Vue 3, Node.js, Express, MongoDB, Tailwind CSS}}{January 2024 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Converted academic prototype into production-ready full-stack platform with role-based access control and secure authentication for Community Health Workers, supporting multi-user workflows.}
+        \resumeItem{Developed backend REST APIs with validation, JWT authentication, and context-aware authorization, preventing unauthorized access and ensuring robust error handling.}
+        \resumeItem{Designed modular, event-driven architecture separating frontend, API, and database layers to enable independent scaling, maintainability, and operational reliability.}
+        %\resumeItem{Integrated interactive dashboards and analytics features to visualize operational data and support data-driven decision-making.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {University of Houston}{Houston, TX}
+      {Bachelor of Science in Computer Information Systems} {August 2020 -- May 2025}
+  \resumeSubHeadingListEnd
+
+%-----------VOLUNTEER-----------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Community Business Ambassador}{November 2021 -- May 2024}
+      {Greater Business of Pearland}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{Analyzed engagement data from 1,500+ participants using Excel to inform outreach strategies, delivering 3,000+ increase in event attendance through data-driven targeting and community partnerships.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

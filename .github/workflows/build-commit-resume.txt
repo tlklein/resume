@@ -1,0 +1,28 @@
+name: Build and Commit Resume PDF
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Commit PDF
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: resume.pdf
+          message: "ci: auto-build resume PDF"
+          author_name: github-actions
+          author_email: github-actions@github.com
