@@ -1,4 +1,4 @@
-TEXFILE=main.tex
+TEXFILE=Trinity_Klein_Resume.tex
 PDFFILE=Trinity_Klein_Resume.pdf
 
 LATEX=pdflatex

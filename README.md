@@ -13,28 +13,28 @@ This repository contains the LaTeX source for my professional resume.
 ```
   ├── .github/
   │   └── workflows/                          # Automation workflows for Github Actions, Bash and Docker
-  |     ├── build-commit-resume.txt           # Ignore patterns for docker cache
-  |     ├── Makefile.mk                   # Ignore patterns for docker cache
-  |     └── build-resume.yml                  # TypeScript configuration  
-  │
+  |     ├── build-commit-resume.txt           # Build resume and output to PDF then commit 
+  |     └── build-resume.yml                  # Build resume and output to PDF
+  ├── Makefile.mk                             # Build resume and output to PDF using make
   ├── .dockerignore                           # Ignore patterns for docker cache
-  ├── main.tex                                # LaTex file with resume
-  ├── README.md                               # Versioned release notes
-  └── Trinity_Klein_Resume.pdf                # TypeScript configuration  
+  ├── .gitignore                              # Ignore patterns for git
+  ├── Trinity_Klein_Resume.tex                # LaTex file with resume
+  ├── README.md                               # Overview of project
+  └── Trinity_Klein_Resume.pdf                # Output pdf based LaTex file
 ```
 
 ## Build
 
 To compile **locally**:
 ```bash
-pdflatex main.tex
+pdflatex Trinity_Klein_Resume.tex 
 ```
 
 To compile with **Docker**:
 
 ```bash
-docker build -t latex-resume .
-docker run --rm -v "$(pwd)":/app latex-resume
+docker build -t latex-resume-ubuntu .
+docker run --rm -v ${PWD}:/app latex-resume-ubuntu
 ```
 
 The PDF is automatically built via GitHub Actions on every commit.
