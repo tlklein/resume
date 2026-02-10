@@ -16,7 +16,7 @@ jobs:
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: main.tex
+          root_file: Trinity_Klein_Resume.tex
 
       - name: Upload Trinity_Klein_Resume PDF
         uses: actions/upload-artifact@v4
