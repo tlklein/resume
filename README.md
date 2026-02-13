@@ -1,6 +1,6 @@
 # Resume
 
-This repository contains the LaTeX source for my professional resume.
+This repository contains the LaTeX source code for my professional resume.
 
 ## Overview
 
