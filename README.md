@@ -1,12 +1,14 @@
 # Resume
 
-This repository contains the LaTeX source for my professional resume. 
+This repository contains the LaTeX source for my professional resume.
 
 ## Overview
 
 - Written in LaTeX for consistency, version control, and reproducibility
 - Focused on cloud engineering, DevOps, and systems-oriented roles
 - Updated periodically as projects and experience evolve
+- Automatically built on every commit using GitHub Actions
+- Automatically build locally or using Docker
 
 ## File Structure 
 
@@ -37,4 +39,3 @@ docker build -t latex-resume-ubuntu .
 docker run --rm -v ${PWD}:/app latex-resume-ubuntu
 ```
 
-The PDF is automatically built via GitHub Actions on every commit.
