@@ -1,4 +1,4 @@
-# Resume
+# Resume Automation System
 
 This repository contains the LaTeX source code for my professional resume.
 
