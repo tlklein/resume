@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          persist-credentials: true
 
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
@@ -23,6 +23,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: Trinity_Klein_Resume.pdf
-          message: "ci: auto-build resume PDF"
+          message: "Auto-build resume PDF"
           author_name: github-actions
           author_email: github-actions@github.com
