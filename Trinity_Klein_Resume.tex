@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Trinity Klein
-% Based off of: github.com/jakeryang/resume
+% Author: Trinity Klein
+% Based on: github.com/jakeryang/resume
 % License : MIT
 %------------------------
 
@@ -111,6 +111,7 @@
 \begin{center}
     \textbf{\Huge \scshape Trinity Klein} \\ \vspace{1pt}
     \small Houston, TX $|$ \href{mailto:trinitylklein@outlook.com}{\underline{trinitylklein@outlook.com}} $|$
+    \small (832)-497-8748 $|$
     \href{https://linkedin.com/in/trinity-klein}{\underline{linkedin.com/in/trinity-klein}} $|$
     \href{https://github.com/tlklein/}{\underline{github.com/tlklein/}} $|$
     \href{https://trinityklein.dev}{\underline{trinityklein.dev}}
@@ -120,10 +121,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
      \small{\item{
-     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, S3, EC2, DynamoDB, API Gateway, IAM, CloudFront, CloudWatch), Terraform, Infrastructure as Code (IaC), AWS CLI} \\
-     \textbf{DevOps \& Automation}{: GitHub Actions (CI/CD), Git, Docker, Kubernetes (AKS/EKS basics), OIDC, Monitoring/Logging, Automated Testing, Security Best Practices, Least-Privilege IAM} \\
-     \textbf{Programming \& Databases}{: Python, JavaScript/TypeScript, Node.js, Bash, SQL, REST APIs, Express.js, Vue.js, React, MongoDB, MySQL, DynamoDB, Serverless Architecture} \\
-     \textbf{Certifications}{: \href{https://www.credly.com/badges/9ab1424b-f346-4461-a1b7-829dc8591cd9}{\underline{AWS Certified Cloud Practitioner}}, AWS Solutions Architect Associate (In Progress)}
+        \textbf{Cloud \& Infrastructure}{: AWS (Lambda, S3, CloudFront, API Gateway, DynamoDB, IAM, CloudWatch, Route 53, Organizations), Terraform, IaC, AWS CLI} \\
+        \textbf{DevOps \& Automation}{: GitHub Actions CI/CD, OIDC Federation, Docker, Kubernetes (EKS/AKS), Git, Playwright, Grype/CodeQL, SBOM, CloudFront OAC, S3 Lifecycle} \\
+        \textbf{Programming \& Databases}{: Python, TypeScript/JavaScript, Bash, SQL, Node.js, REST APIs, MySQL, DynamoDB, MongoDB} \\
+        \textbf{Certifications}{: \href{https://www.credly.com/badges/9ab1424b-f346-4461-a1b7-829dc8591cd9}{\underline{AWS Certified Cloud Practitioner}}, AWS Solutions Architect Associate (In Progress)}
     }}
  \end{itemize}
 
@@ -132,21 +133,21 @@
 \section{Relevant Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Klein Consulting d/b/a Southeast Hypnosis}{Houston, TX}
+    {Southeast Hypnosis}{Houston, TX}
     {}{}\vspace{-17pt}
     \resumeSubSubheading
       {Automation Engineer (Digital Transformation)}{September 2021 -- December 2024}
     \resumeItemListStart
-      \resumeItem{Architected and deployed automated scheduling, intake, and reminder workflows through a white-labeled CRM/automation platform with web-hook integrations, reducing manual administrative workload and lowering client no-show rates.}
-      \resumeItem{Integrated AI-powered chat-bot and lead-nurture sequences to qualify inbound traffic, automate follow-up communication, and improve conversion of prospective clients into booked appointments.}
-      \resumeItem{Migrated corporate website from SiteGrounds to optimized WordPress infrastructure with caching, CDN integration, and database tuning, improving load times, up-time, and user experience.}
-      %\resumeItem{Centralized 300+ client records into a secure database, improving reporting accuracy, data integrity, and downstream automation performance.}
+        \resumeItem{Architected end-to-end RevOps automation on GoHighLevel (HighLevel) - engineered custom CRM pipelines, scheduling logic, intake forms, and multi-channel nurture sequences with webhook/API integrations, eliminating 15+ hrs/week of manual admin and reducing client no-show rates by 30\%+.}
+        \resumeItem{Built and deployed an AI-powered inbound qualification system with chat widget, SMS/email follow-up workflows, and conditional logic to triage, nurture, and auto-book leads, increasing lead-to-appointment conversion and ensuring 24/7 response time.}
+        \resumeItem{Migrated and re-platformed corporate website from SiteGround to high-performance WordPress stack (LiteSpeed caching, Cloudflare CDN, database optimization), improving page load speed by >60\%, increasing uptime to 99.9\%, and improving organic booking UX.}
+        \resumeItem{Centralized and cleaned 300+ client records into a single source-of-truth CRM with automated tagging, compliance-safe data handling, and reporting dashboards, improving data integrity and enabling downstream automation and retention campaigns.}
     \resumeItemListEnd
     \resumeSubSubheading
       {Office Manager}{March 2020 -- September 2021}
     \resumeItemListStart
-      \resumeItem{Managed daily front-office operations including scheduling, client communications, records, documentation, billing, and intake processes, while ensuring confidentiality and operational accuracy.}
-      \resumeItem{Collaborated directly with ownership on business operations, identifying repetitive bottlenecks and improvements to improved lead generation, collection, and response times.}
+      \resumeItem{Managed end-to-end front-office operations (scheduling, intake, confidential client records, billing, and client communications) while auditing manual workflows for failure points, data loss, and time sinks.}
+      \resumeItem{Partnered with ownership to map lead-to-cash bottlenecks and proposed CRM-driven automation roadmap for scheduling and intake, catalyzing promotion to Automation Engineer and full digital transformation.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -154,32 +155,25 @@
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-      {\href{https://github.com/tlklein/portfolio-website}{\underline{Serverless Portfolio Website}} $|$ \href{https://trinityklein.dev/}{\underline{Live}} $|$ \emph{AWS, Terraform, CI/CD, Astro, TailWindCSS, TypeScript}}{September 2025 -- November 2025}
+      {\href{https://github.com/tlklein/portfolio-website}{\underline{Serverless Portfolio Website}} $|$ \href{https://trinityklein.dev/}{\underline{Live}} $|$ \emph{AWS, Terraform, CI/CD, Astro, TailwindCSS, TypeScript}}{September 2025 -- November 2025}
       \resumeItemListStart
-        \resumeItem{Architected and deployed multi-account AWS infrastructure (2 OUs: production/test) with MFA-enforced root account, environment isolation, and cost governance alerts, demonstrating cloud-native best practices.}
-        \resumeItem{Implemented end-to-end CI/CD pipelines using GitHub Actions with OIDC authentication, automated testing (Playwright and Grype), Terraform IaC deployments, and CloudFront invalidation for zero-downtime releases.}
-        \resumeItem{Built serverless backend with AWS Lambda, API Gateway, and DynamoDB to track visitor analytics with less than 100ms latency and high reliability, ensuring scalability for production workloads.}
-        \resumeItem{Applied security and compliance best practices including IAM least-privilege policies, S3 bucket hardening (versioning, AES-256 encryption, OAC-only access), and lifecycle rules for cost optimization.}
-      \resumeItemListEnd
-
-      
-  \resumeProjectHeading
-      {\href{https://github.com/tlklein/CIS-4375-Team3-CapstoneProject}{\underline{Innov8 Barber Shop Management Platform}} $|$ \emph{Vue.js, Node.js, Express.js, MySQL, AWS}}{January 2025 -- April 2025}
-      \resumeItemListStart
-        \resumeItem{Coordinated delivery of a full-stack scheduling and customer management platform for a local barbershop, aligning scope, timelines, and stakeholder requirements to replace manual appointment and client tracking processes.}
-        \resumeItem{Led Agile ceremonies, status reporting, and cross-functional collaboration across front-end, backend, database, and architecture teams, helping keep milestones on track from planning through final presentation.}
-        \resumeItem{Translated business needs into technical artifacts including requirements traceability, workflow diagrams, risk logs, and testing documentation, improving communication between stakeholders and developers while supporting a successful project presentation.}
+        \resumeItem{Engineered multi-account AWS landing zone with AWS Organizations (Prod/Test OUs), MFA-enforced root, remote S3 + DynamoDB Terraform state, and \$0.01 billing anomaly alerts for cost governance and environment isolation.}
+        \resumeItem{Implemented zero-secrets CI/CD via GitHub Actions OIDC federation with modular Terraform IaC, automated Playwright smoke tests, SBOM/Grype supply-chain scans, and CloudFront cache invalidation for zero-downtime releases.}
+        \resumeItem{Built low-latency serverless backend (Lambda Python + API Gateway HTTP + DynamoDB atomic counters) for real-time visitor analytics, achieving <100ms p95 latency with graceful frontend fallback and scalable on-demand concurrency.}
+        \resumeItem{Hardened security posture with IAM least-privilege, CloudFront OAC-only S3 access, AES-256 encryption, S3 versioning + lifecycle rules, and CodeQL scanning - documented in 6-part blog series and 4 architecture diagrams.}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
- \resumeSubheading
-      {University of Houston}{Houston, TX}
-      {Bachelor of Science in Computer Information Systems} {August 2020 -- May 2025}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Houston}{Houston, TX}
+    {Bachelor of Science in Computer Information Systems}{August 2020 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Cum Laude, GPA 3.5, Dean's List (3x); Active FITP member — tech workshops, competitions, \& networking}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------VOLUNTEER-----------
 \section{Volunteering}
@@ -188,10 +182,10 @@
       {Community Business Ambassador}{November 2021 -- May 2024}
       {Greater Business of Pearland}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Analyzed engagement data from 1,500+ participants using Microsoft Excel to inform outreach strategies, delivering 3,000+ increase in event attendance through data-driven targeting and community partnerships.}
+        \resumeItem{Built and maintained attendee demographics dashboard in Excel from 1,500+ Eventbrite registrations to analyze audience trends and inform data-driven outreach, partnerships, and programming decisions driving measurable growth in event attendance.}
+        \resumeItem{Served as Board liaison, producing executive-level meeting minutes, action items, and attendance reports for the Board of Directors to ensure governance compliance and operational follow-through.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-  
 
 %-------------------------------------------
 \end{document}
